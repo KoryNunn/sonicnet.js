@@ -185,7 +185,7 @@ var audioContext = window.audioContext || new webkitAudioContext();
 function SonicServer(params) {
   params = params || {};
   this.peakThreshold = params.peakThreshold || -65;
-  this.minRunLength = params.minRunLength || 2;
+  this.minRunLength = params.minRunLength || 5;
   this.coder = params.coder || new SonicCoder(params);
   // How long (in ms) to wait for the next character.
   this.timeout = params.timeout || 300;
